@@ -1,0 +1,25 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Friend-Finder Everyone wants a friend. We help you find a friend. We are going to use the FriendFinder API to find you a best friend in your area!",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HippoRun/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HippoRun/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/HippoRun/FriendFinder#readme"
+}

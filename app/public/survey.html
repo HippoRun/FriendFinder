@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body> 
+    
+    <div class="container">
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-sm">
+                <h2> Survey Questions</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h3> About You</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Name(required)</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Link to Photo image(required)</label>
+                        <input type="text" id="photo" class="form-control" required>                    
+                    </div>
+                </form>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 1 </h3>
+                Staying home on a Friday night playing video games is fun for you.
+                <select class="custom-select" id="q1">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 2</h3>
+                Cuddeling and watching scary movies is funner than going to the club for you.
+                <select class="custom-select" id="q2">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 3</h3>
+                You're never too old for anime.
+                <select class="custom-select" id="q3">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 4</h3>
+                Coffee is live.
+                <select class="custom-select" id="q4">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 5</h3>
+                Being a foodie is one of your qualities.
+                <select class="custom-select" id="q5">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 6</h3>
+                It's okay to be a home body. 
+                <select class="custom-select" id="q6">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 7</h3>
+                Hippos are one of the cutest animals in the world.
+                <select class="custom-select" id="q7">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 8</h3>
+                If someone doens't like animals, they're usually bad people.
+                <select class="custom-select" id="q8">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 9</h3>
+                Laying on the beach with a margarita is a perfect vacation.
+                <select class="custom-select" id="q9">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-sm">
+                <h3> Question 10</h3>
+                You believe in love at first sight.
+                <select class="custom-select" id="q10">
+                    <option selected>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div><hr>
+        <div class="row"> 
+            <footer class="footer">
+                <div class="container">
+                   <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/hipporun/FriendFinder">GitHub Repo</a></p>
+                </div>
+            </footer>  
+        </div>
+
+        <div class="row"></div>
+    </div>
+
+    <div class="modal fade" role="dialog" id="results">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Best Match</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" id="submit">Close</button>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#submit").on("click", function() {
+                //form validation
+                console.log("working");
+                function validateForm() {
+                    var isValid = true;
+                    $('.form-control').each(function() {
+                        if ($(this).val() === ''){
+                            isValid = false;
+                        }
+                    });
+                    $('.custom-select').each(function() {
+                        if ($(this).val() === ""){
+                            isValid = false;
+                        }
+                    });
+                    return isValid;
+                }
+                //if everything is filled
+                if (validateForm() == true) {
+                    //creates a new friend from the values submitted
+                    var newFriend = {
+                        name: $('#name').val().trim(),
+                        profilePic: $('#photo').val().trim(),
+                        scores: [
+                            $('#q1').val(),
+                            $('#q2').val(),
+                            $('#q3').val(),
+                            $('#q4').val(),
+                            $('#q5').val(),
+                            $('#q6').val(),
+                            $('#q7').val(),
+                            $('#q8').val(),
+                            $('#q9').val(),
+                            $('#q10').val(),
+                        ]
+                    };
+                    //Grabs current URL of website
+                    var currentURL = window.location.origin;
+                    //AJAX posts the data to friends API.
+                    $.post(currentURL + "/api/friends", newFriend, function(data) {
+                        //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                        $("#match-name").text(data.name);
+                        $("#match-img").attr("src", data.profilePic);
+                    });
+                    // Show the modal with the best match
+                    $('.modal').modal();
+                    //clear form after submission
+                    $('#name').val("");
+                    $('#photo').val("");
+                    $('#q1').val("");
+                    $('#q2').val("");
+                    $('#q3').val("");
+                    $('#q4').val("");
+                    $('#q5').val("");
+                    $('#q6').val("");
+                    $('#q7').val("");
+                    $('#q8').val("");
+                    $('#q9').val("");
+                    $('#q10').val("");
+                } else {
+                    alert("Please fill out ALL fields before submitting survey!")
+                }
+                // return false;
+            });
+        });
+        </script>
+     
+</body>
+</html>
